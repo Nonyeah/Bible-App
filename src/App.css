@@ -1,0 +1,200 @@
+.biblepage,
+.pagecontents,
+.selectchapter {
+  border-radius: 20px;
+  border: 1px solid black;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.bibletitle {
+  text-align: center;
+  font: 18px calibri;
+  text-transform: capitalize;
+  color: #696969;
+  font-weight: bold;
+  border: none;
+  outline: none;
+  padding: 5px;
+  background-color: #fff;
+  cursor: pointer;
+}
+
+.biblechapter {
+  font-weight: bold;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 20px;
+  text-align: center;
+}
+
+.bibletext {
+  margin: 20px;
+  padding: 10px;
+  font: 14px arial;
+  line-height: 200%;
+}
+.biblenavigation {
+  display: flex;
+  justify-content: space-between;
+  border-radius: 30px;
+  height: 60px;
+  border: 1px solid #a9a9a9;
+  align-items: center;
+  margin: 10px 15px 30px 15px;
+}
+
+.leftbutton,
+.rightbutton {
+  font: 30px arial;
+  border: none;
+  outline: none;
+  background-color: #fff;
+  cursor: pointer;
+}
+.leftbutton {
+  margin-left: 20px;
+}
+
+.rightbutton {
+  margin-right: 20px;
+}
+
+.selectchapter button {
+  padding: 16px;
+  border-radius: 5px;
+  margin: 0px 10px;
+  cursor: pointer;
+}
+
+.selectchapter button:hover {
+  opacity: 0.4;
+}
+
+.selectchapter ul {
+  display: flex;
+  list-style-type: none;
+}
+
+.selectchapter li:hover {
+  opacity: 0.4;
+}
+
+span {
+  font-size: 50px;
+  margin: 10px 30px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.bottommenu {
+  display: flex;
+  cursor: pointer;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.bottommenu li span {
+  font-size: 18px;
+  font-weight: 300;
+}
+.bottommenu li {
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+}
+.bottommenu li:hover {
+  opacity: 0.5;
+}
+
+.love,
+.anxiety,
+.depression,
+.fear {
+  height: 60px;
+  color: white;
+  text-transform: capitalize;
+  font: 16px georgia;
+  width: 30%;
+  margin: 20px;
+}
+
+.love {
+  background-color: red;
+}
+.anxiety {
+  background-color: purple;
+}
+.depression {
+  background-color: blueviolet;
+}
+.fear {
+  background-color: brown;
+}
+
+.pagecontents h1,
+.pagecontents p {
+  margin: 20px;
+  text-align: center;
+}
+
+.pagecontents p {
+  font: 14px arial;
+  line-height: 200%;
+}
+
+.pagecontents {
+  margin-bottom: 40px;
+  cursor: pointer;
+}
+
+.pagecontents ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+.pagecontents li {
+  margin: 10px 0;
+  padding: 10px;
+  text-transform: capitalize;
+}
+
+.pagecontents .entity {
+  font-size: 15px;
+}
+
+.biblebooks.bchapters.oldtest {
+  display: block;
+  font: 14px arial;
+  margin: 40px 20px;
+  text-transform: capitalize;
+  font: 16px calibri;
+  cursor: pointer;
+}
+
+.biblebooks.bchapters.oldtest li {
+  margin: 16px 0;
+  padding: 10px;
+}
+.prayer {
+  font-size: 90px;
+}
+
+.bibleimage img {
+  display: block;
+  margin: 20px auto;
+  width: 80%;
+}
+
+@media only screen and (max-width: 500px) {
+  .pagecontents p {
+    font: 12px arial;
+    line-height: 200%;
+  }
+}
