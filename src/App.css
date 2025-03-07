@@ -131,6 +131,7 @@ span {
   width: 100%;
   padding: 10px;
   border-radius: 10px;
+  text-align: center;
 }
 
 .outer-discovery-container {
@@ -159,7 +160,7 @@ span {
 .depressionTurn,
 .fearTurn, 
 .angerTurn,
-.hopeTurn
+.hopeTurn,
 .doubtTurn,
 .joyTurn,
 .temptationTurn
