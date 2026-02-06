@@ -60,7 +60,7 @@ export function HomePage({ pageselection }) {
           promises of God to your life
         </p>
         <div className="bibleimage">
-          <img src="https://www.thefashionconnector.com/react_images/bible.jpg" />
+          <img src="https://www.thefashionconnector.com/bible.jpg" />
         </div>
         <p>
           {" "}
