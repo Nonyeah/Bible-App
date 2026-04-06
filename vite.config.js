@@ -1,8 +1,13 @@
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 
-// https://vite.dev/config/
+/// <reference types="vitest/config" />
 export default defineConfig({
   plugins: [react()],
-  base: "/Bible-App/"
+  base: "/Bible-App/",
+   test: {
+    globals: true,
+    environment: "jsdom", 
+  },
+  setupFiles: "./src/setup.jsx"
 })

@@ -2,6 +2,7 @@ import "./App.css";
 import React from "react";
 import { useState } from "react";
 import ReactDOM from "react-dom/client";
+import notebook from "./assets/notebook.jpg"
 
 const genesis = [
   {
@@ -89,7 +90,7 @@ export function Plans({ pageselection }) {
           drastically when you set aside time to organise your spiritual life.
         </p>
         <div className="bibleimage">
-          <img src="https://www.thefashionconnector.com/react_images/notebook.jpg" />
+          <img src={`${notebook}`} />
         </div>
       </div>
     );
@@ -97,7 +98,6 @@ export function Plans({ pageselection }) {
 }
 
 export function Discover({ pageselection }) {
-
   const [transition, settransition] = useState("");
 
   if (pageselection == "discover") {
@@ -106,65 +106,99 @@ export function Discover({ pageselection }) {
         <h1>Discovery </h1>
 
         <div className="outer-discovery-container">
-        
-        <div className="discovery-container">
-        <div className={`${transition}` === 'loveTurn' ? 'loveTurn love'  : 'love'} onClick={() => settransition("loveTurn") }>
-        <p>love</p>
-        </div>
-        <div className={`${transition}` === 'anxietyTurn' ? 'anxietyTurn anxiety'  : 'anxiety'} onClick={() => {
-          settransition("anxietyTurn");
-        }}>
-          <p>anxiety</p>
-        </div>
-        </div>
+          <div className="discovery-container">
+            <div
+              className={
+                `${transition}` === "loveTurn" ? "loveTurn love" : "love"
+              }
+              onClick={() => settransition("loveTurn")}
+            >
+              <p>love</p>
+            </div>
+            <div
+              className={
+                `${transition}` === "anxietyTurn"
+                  ? "anxietyTurn anxiety"
+                  : "anxiety"
+              }
+              onClick={() => {
+                settransition("anxietyTurn");
+              }}
+            >
+              <p>anxiety</p>
+            </div>
+          </div>
 
-        <div className="discovery-container">
-        <div className={`${transition}` === 'depressionTurn' ? 'depressionTurn depression' : 'depression'}
-        onClick={() => {
-          settransition("depressionTurn");
-        }}>
-        <p>depression</p>
-        </div>
-        <div className={`${transition}` === 'fearTurn' ? 'fearTurn fear' : 'fear'}
-        onClick={() => { 
-        settransition("fearTurn");
-        }}>
-          <p>fear</p>
-        </div>
-        </div>
+          <div className="discovery-container">
+            <div
+              className={
+                `${transition}` === "depressionTurn"
+                  ? "depressionTurn depression"
+                  : "depression"
+              }
+              onClick={() => {
+                settransition("depressionTurn");
+              }}
+            >
+              <p>depression</p>
+            </div>
+            <div
+              className={
+                `${transition}` === "fearTurn" ? "fearTurn fear" : "fear"
+              }
+              onClick={() => {
+                settransition("fearTurn");
+              }}
+            >
+              <p>fear</p>
+            </div>
+          </div>
 
+          <div className="discovery-container">
+            <div
+              className={
+                `${transition}` === "hopeTurn" ? "hopeTurn hope" : "hope"
+              }
+              onClick={() => {
+                settransition("hopeTurn");
+              }}
+            >
+              <p>hope</p>
+            </div>
+            <div
+              className={
+                `${transition}` === "temptationTurn"
+                  ? "temptationTurn temptation"
+                  : "temptation"
+              }
+              onClick={() => {
+                settransition("temptationTurn");
+              }}
+            >
+              <p>temptation</p>
+            </div>
+          </div>
 
-        <div className="discovery-container">
-        <div className={`${transition}` === 'hopeTurn' ? 'hopeTurn hope' : 'hope'}
-        onClick={() => {
-          settransition("hopeTurn");
-        }}>
-        <p>hope</p>
-        </div>
-        <div className={`${transition}` === 'temptationTurn' ? 'temptationTurn temptation' : 'temptation'}
-        onClick={() => { 
-        settransition("temptationTurn");
-        }}>
-          <p>temptation</p>
-        </div>
-        </div>
-
-
-<div className="discovery-container">
-        <div className={`${transition}` === 'doubtTurn' ? 'doubtTurn doubt' : 'doubt'}
-        onClick={() => {
-          settransition("doubtTurn");
-        }}>
-        <p>Doubt</p>
-        </div>
-        <div className={`${transition}` === 'joyTurn' ? 'joyTurn joy' : 'joy'}
-        onClick={() => { 
-        settransition("joyTurn");
-        }}>
-          <p>joy</p>
-        </div>
-        </div>
-
+          <div className="discovery-container">
+            <div
+              className={
+                `${transition}` === "doubtTurn" ? "doubtTurn doubt" : "doubt"
+              }
+              onClick={() => {
+                settransition("doubtTurn");
+              }}
+            >
+              <p>Doubt</p>
+            </div>
+            <div
+              className={`${transition}` === "joyTurn" ? "joyTurn joy" : "joy"}
+              onClick={() => {
+                settransition("joyTurn");
+              }}
+            >
+              <p>joy</p>
+            </div>
+          </div>
         </div>
       </div>
     );
@@ -216,7 +250,7 @@ export function More({ pageselection }) {
   }
 }
 
-function BottomBar({ displaycategories, hidepage }) {
+export function BottomBar({ displaycategories, hidepage }) {
   return (
     <ul className="bottommenu">
       <li
